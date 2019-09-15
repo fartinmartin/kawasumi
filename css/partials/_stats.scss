@@ -1,0 +1,87 @@
+#stats {
+  @include media(">=720px") {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stats-container {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+
+  @include media(">=720px") {
+    width: 100%;
+    display: block;
+    padding-right: 3rem;
+  }
+  @include media(">=1200px") {
+    border-bottom: 2rem dotted $red;
+  }
+}
+
+#stats .break-quote {
+  @include media(">=720px") {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+.stats-intro {
+  text-align: right;
+  width: 100%;
+  margin-bottom: 4rem;
+  align-self: end;
+}
+
+.stats-intro h2 {
+  @extend .font-display;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: .15rem;
+}
+
+.stats-intro span.highlight {
+  color: $yellow;
+}
+
+.weight {
+  margin-right: 0;
+}
+
+.stat_wrap {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.stat_num {
+  @extend .font-display;
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: right;
+  color: $yellow;
+}
+
+.stat_label {
+  @extend .font-condensed;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  writing-mode: sideways-lr;
+  margin-bottom: 5px;
+
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

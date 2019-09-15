@@ -1,0 +1,152 @@
+#bio {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include media(">=720px") {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @include media(">=1200px") {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.bio-card, .bio-quote {
+  width: 100vw;
+  min-height: 50vh;
+  padding: 4rem 2rem;
+
+  @include media(">=720px") {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+// bio card
+.bio-card {
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background: $grey-lightest;
+}
+
+.bio-card h3 {
+  @extend .font-display;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+#tenacity h3 {
+  margin-left: -.5rem;
+}
+
+#experience h3 {
+  margin-left: -.1rem;
+}
+
+// bio quote
+.bio-quote {
+  @extend .font-display;
+  font-weight: 700;
+  text-align: right;
+
+  display: grid;
+  align-items: center;
+  justify-items: center;
+
+  @include media(">400px") {
+    padding-right: 4rem;
+    overflow: hidden;
+  }
+  @include media(">=1200px") {
+  }
+}
+
+.bio-quote blockquote {
+  font-size: 2rem;
+  line-height: 1.05;
+  letter-spacing: -1px;
+
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+
+  // padding-right: .65rem;
+
+  @include media(">=1200px") {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  @include media(">=1280px") {
+    font-size: 2rem;
+  }
+}
+
+.bio-quote-image {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.open-quote, .close-quote { position: relative; }
+.close-quote { margin-right: -1.8rem; }
+
+.bio-quote-yellow {
+  background: $yellow;
+  color: $blue;
+}
+
+.bio-quote-blue {
+  background: $blue;
+  color: $yellow;
+}
+
+.stroked-yellow, .stroked-blue, .stroked-red {
+  color: transparent;
+  z-index: 10;
+}
+
+.stroked-blue {
+  -webkit-text-stroke: 1px $blue;
+}
+.stroked-yellow {
+  -webkit-text-stroke: 1px $yellow;
+  mix-blend-mode: hard-light;
+}
+.stroked-red {
+  -webkit-text-stroke: 1px $red;
+  mix-blend-mode: screen;
+}
+
+#creative {
+  @include media(">=720px") {
+    order: 2;
+  }
+  @include media(">=1200px") {
+    order: initial;
+  }
+}
+
+.mask-determined {
+  mask: url("../img/determined2.png");
+  mask-type: alpha;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+.mask-creative {
+  mask: url("../img/creative3.png");
+  mask-type: alpha;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}

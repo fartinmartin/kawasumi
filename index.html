@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- favicon crap -->
+  <link rel="shortcut icon" href="/img/favicons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+  <link rel="manifest" href="/img/favicons/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#fff">
+  <meta name="application-name" content="Nahomi Kawasumi">
+  <link rel="apple-touch-icon" sizes="57x57" href="/img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="/img/favicons/apple-touch-icon-1024x1024.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Nahomi Kawasumi">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Nahomi Kawasumi</title>
+
+  <!-- adobe fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/vzz0ypo.css">
+
+  <!-- my script libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/anime/anime.min.js"></script>
+  <script src="js/sm/ScrollMagic.min.js"></script>
+  <script src="js/sm/debug.addIndicators.min.js"></script>
+  <script src="js/anime/animation.anime.min.js"></script>
+
+</head>
+
+<body class="font-sans">
+  <nav class="">
+    <ul class="navbar"></ul>
+  </nav>
+
+  <section id="hero">
+    <div class="clip z-20"><span class="name name-first font-display">Nahomi</span></div>
+    <div class="clip z-40"><span class="name name-second font-display">Kawasumi</span></div>
+    <div class="clip z-50 w-full centered relative"><img class="hero-img" src="img/kick-arm.png" alt=""></div>
+    <div class="clip z-30 w-full centered relative"><img class="hero-img" src="img/kick.png" alt=""></div>
+    <div class="z-10" id="circle"></div>
+    <a href="#" class="logo"><img src="img/nike/black.svg"></a>
+  </section>
+
+  <section id="bio" data-name="bio">
+    <div class="bio-quote bio-quote-yellow no-attr" id="driven">
+      <blockquote>
+        “I have a strong drive to not want to&nbsp;lose&nbsp;to anyone<span class="hidden-mobile">, no matter if they are older or bigger than me. I’ve come this far thinking, ‘I am not going to lose</span>.<span class="hidden-mobile">’</span><span class="close-quote">”</span>
+      </blockquote>
+      <blockquote class="stroked-yellow mask-determined">
+        “I have a strong drive to not want to&nbsp;lose&nbsp;to anyone<span class="hidden-mobile">, no matter if they are older or bigger than me. I’ve come this far thinking, ‘I am not going to lose</span>.<span class="hidden-mobile">’</span><span class="close-quote">”</span>
+      </blockquote>
+      <img src="img/determined2.png" class="bio-quote-image" id="driven-img" alt="">
+    </div>
+    <div class="bio-card" id="tenacity">
+      <h3>Tenacity</h3>
+      <p>Nahomi has known since second grade that she wanted to be a soccer player. Growing up, she taught herself the skills to compete at a level of girls twice her age.</p>
+      <p>It is this competitive edge and stubbornness that has continued to bring her successes, even though she has never been the quickest or most powerful player.</p>
+    </div>
+    <div class="bio-quote bio-quote-blue no-attr" id="creative">
+      <blockquote>
+        “You cannot win by only using players who are fast, big, and strong. You need to be creative.<span class="close-quote">”</span>
+      </blockquote>
+      <blockquote class="stroked-yellow mask-creative">
+        “You cannot win by only using players who are fast, big, and strong. You need to be creative.<span class="close-quote">”</span>
+      </blockquote>
+      <img src="img/creative3.png" class="bio-quote-image" id="creative-img" alt="">
+    </div>
+    <div class="bio-card" id="experience">
+      <h3>Experience</h3>
+      <p>Focusing on fundamentals and strategic thinking has made Nahomi an exceptionally successful team player allowing her to have had a career full of rich experiences.</p>
+      <p>Nahomi won the World Cup with the Japan national team and received a silver medal in the Olympics. She had a long career in the Japanese women’s league with INAC Kobe Leonessa before coming to the Seattle Reign FC and solidifying herself as one of the NWSL’s best players.</p>
+    </div>
+  </section>
+
+  <section id="goal-video">
+    <video src="img/vid.mp4" loop playsinline id="video-background"></video>
+    <span class="goal goal-ltr">ggooaall!!</span>
+    <span class="goal goal-rtl">ggooaall!!</span>
+    <span class="goal goal-ltr">ggooaall!!</span>
+    <span class="goal goal-rtl">ggooaall!!</span>
+    <span class="goal goal-ltr">ggooaall!!</span>
+  </section>
+
+  <section id="stats" data-name="stats">
+    <div class="stats-container centered">
+      <div class="stats-intro">
+        <h2><span class="highlight">Naho</span>mi <br> Kawasumi</h2>
+        <span class="font-stat position">Foward</span>
+        <span class="font-stat number">No.</span><span class="font-stat number_9">9</span>
+        <span class="font-stat height">5’</span><span class="font-stat height">2”</span><span class="font-stat weight">110lbs</span>
+      </div>
+      <div class="stat_wrap">
+        <div class="stat">
+          <span class="stat_num" id="stat_games-played">0</span>
+          <span for="" class="stat_label">Games <br> Played</span>
+        </div>
+        <div class="stat">
+          <span class="stat_num" id="stat_minutes-played">0</span>
+          <span for="" class="stat_label">Minutes <br> Played</span>
+        </div>
+        <div class="stat">
+          <span class="stat_num" id="stat_goals">0</span>
+          <span for="" class="stat_label">Goals</span>
+        </div>
+        <div class="stat">
+          <span class="stat_num" id="stat_assists">0</span>
+          <span for="" class="stat_label">Assists</span>
+        </div>
+      </div>
+    </div>
+    <div class="break-quote">
+      <blockquote>“I was shocked that a girl could be this good.<span class="close-quote">”</span></blockquote>
+      <div>
+        <span class="attr">Megumi Kamionobe</span>
+        <span class="attr-descriptor">Midfielder</span>
+        <span class="attr-descriptor">No.10</span>
+        <span class="attr-descriptor">Japanese National Team</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="honors" data-name="honors">
+    <div class="honors-container centered">
+      <h2 class="">Honors</h2>
+      <img src="img/indiv.jpg" alt="">
+      <img src="img/jnt.svg" alt="">
+      <img src="img/inac.jpg" alt="">
+      <img src="img/reign.svg" alt="">
+      <div class="honors-card" id="honors_individual">
+        <h3>Individual</h3>
+        <div class="honors-card-section">
+          <h4>Japan Women's Football League</h4>
+          <span>MVP: 2011, 2013</span>
+          <span>Top Scorer: 2011</span>
+          <span>Best XI: 2010, 2011, 2012, 2013</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>NWSL</h4>
+          <span>Player of the Week: Week 13, Week 16 (2014); Week 11 (2016); Week 5 (2017)</span>
+          <span>Best XI: 2014</span>
+        </div>
+      </div>
+      <div class="honors-card" id="honors_national-team">
+
+        <h3>Japan national team</h3>
+        <div class="honors-card-section">
+          <h4>FIFA Women's World Cup</h4>
+          <span>Champion: 2011</span>
+          <span>Runner-Up: 2015</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>Olympic Games</h4>
+          <span>Silver Medal: 2012</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>Asian Games</h4>
+          <span>Gold Medal: 2010</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>AFC Women's Asian Cup</h4>
+          <span>Gold Medal: 2014</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>Summer Universiade</h4>
+          <span>Bronze Medal: 2005</span>
+        </div>
+      </div>
+      <div class="honors-card" id="honors_japanese-club">
+
+        <h3>INAC Kobe Leonessa</h3>
+        <div class="honors-card-section">
+          <h4>L.League</h4>
+          <span>Champion: 2011, 2012, 2013</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>Empress's Cup</h4>
+          <span>Champion: 2010, 2011, 2012, 2013, 2015, 2016</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>Nadeshiko League Cup</h4>
+          <span>Champion: 2013</span>
+        </div>
+
+        <div class="honors-card-section">
+          <h4>International Women's Club Championship</h4>
+          <span>Champion: 2013</span>
+        </div>
+      </div>
+      <div class="honors-card" id="honors_club-team">
+
+        <h3>Seattle Reign FC</h3>
+        <h4>NWSL</h4>
+        <span>Shield (regular season winners): 2014</span>
+      </div>
+    </div>
+    <div class="break-quote break-quote-blue">
+      <blockquote><span class="open-quote">“</span>Nahomi is the assist queen, she’s one of the best in the world at creating chances for her teammates.<span class="close-quote">”</span></blockquote>
+      <div>
+        <span class="attr">Laura Harvey</span>
+        <span class="attr-descriptor">Former Coach</span>
+        <span class="attr-descriptor">Seattle Reign FC</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" data-name="shop">
+    <div class="product-card">
+      <img src="img/shop/red.jpg" alt="">
+      <span class="product-name">Nike Vapor XII Elite</span>
+      <span class="price">$95.00</span>
+      <a href="#" class="buy">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <img src="img/shop/blue.jpg" alt="">
+      <span class="product-name">Nike Vapor XII Elite</span>
+      <span class="price">$95.00</span>
+      <a href="#" class="buy">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <img src="img/shop/yellow.jpg" alt="">
+      <span class="product-name">Nike Vapor XII Elite</span>
+      <span class="price">$95.00</span>
+      <a href="#" class="buy">Add to Cart</a>
+    </div>
+    <div class="product-card">
+      <img src="img/shop/grey.jpg" alt="">
+      <span class="product-name">Nike Vapor XII Elite</span>
+      <span class="price">$95.00</span>
+      <a href="#" class="buy">Add to Cart</a>
+    </div>
+  </section>
+
+  <div class="break-quote" id="last">
+    <blockquote>“こんばんはー久しぶりに、帰ってきた<img src="img/047.png" alt=""><span class="close-quote">”</span></blockquote>
+    <div>
+        <span class="attr">Nahomi Kawasumi</span>
+        <span class="attr-descriptor">From her blog:</span>
+        <span class="attr-descriptor"><a href="https://ameblo.jp/nahomi-kawasumi/">Road Runner</a></span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-card">
+        <h4>Customer Service</h4>
+        <ul class="foot_nav">
+          <li><a href="#">Customer Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Return Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-card">
+        <h4>Our Policies</h4>
+        <ul class="foot_nav">
+          <li><a href="#">Student Discount</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-card">
+        <h4>Nike, Inc.</h4>
+        <ul class="foot_nav">
+          <li><a href="#">Nike USA</a></li>
+          <li><a href="#">Corporate News</a></li>
+          <li><a href="#">Press Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-card">
+        <h4>About</h4>
+        <ul class="foot_nav">
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+    <a href="#" class="logo footer-logo"><img src="img/nike/black.svg"></a>
+  </footer>
+
+  <script src="js/nav.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/goal/goalSpans.js"></script>
+  <script src="js/goal/tlGoal.js"></script>
+</body>
+
+</html>

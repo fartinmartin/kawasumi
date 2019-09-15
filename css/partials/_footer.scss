@@ -1,0 +1,70 @@
+footer {
+  position: relative;
+}
+
+.footer-container {
+  text-align: right;
+  padding-right: 2rem;
+  width: 100%;
+  align-self: start;
+
+  @include media(">=1200px") {
+    display: flex;
+    text-align: left;
+    max-width: 50%;
+    align-self: center;
+    justify-content: space-between;
+  }
+}
+
+.footer-card {
+  width: 100%;
+  margin: 2rem 0;
+  @include media(">=1200px") {
+    margin-top: 0;
+    width: auto;
+  }
+}
+
+.footer-card:first-of-type {
+  @include media(">=tablet") {
+    margin-top: 2.75rem;
+  }
+  @include media(">=1200px") {
+    margin-top: 0;
+  }
+}
+
+.footer-card:last-of-type {
+  margin-bottom: 10vh;
+}
+
+.footer-card h4 {
+  @extend .font-condensed;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: .25rem;
+  @include media(">=tablet") {
+    font-size: 1rem;
+  }
+}
+
+.footer-card a {
+  font-size: .75rem;
+  color: $grey-dark;
+  line-height: 1.5;
+  @include media(">=tablet") {
+    font-size: .875rem;
+  }
+}
+
+.footer-logo {
+
+  top: initial;
+  bottom: 1.5rem;
+
+  @include media("screen", ">=tablet") {
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+}

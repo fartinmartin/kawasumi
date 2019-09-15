@@ -1,0 +1,105 @@
+#hero {
+  padding: 0;
+  position: relative;
+}
+
+#hero > * {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.hero-img {
+  max-width: 90vw;
+  height: auto;
+  max-height: 90vh;
+  width: auto;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: 900;
+
+  @include media(">=400px") {
+    font-size: 2.4rem;
+  }
+  @include media(">=500px") {
+    font-size: 3rem;
+  }
+  @include media(">=768px") {
+    font-size: 4.5rem;
+  }
+  @include media(">=1000px") {
+    font-size: 6rem;
+  }
+}
+
+// first name position
+#hero div:nth-child(1){
+  position: relative;
+  top: -.7rem;
+
+  @include media(">=400px") {
+    top: -.85rem;
+  }
+  @include media(">=500px") {
+    top: -1rem;
+  }
+  @include media(">=768px") {
+    top: -1.5rem;
+  }
+  @include media(">=1000px") {
+    top: -2rem;
+  }
+}
+
+// last name position
+#hero div:nth-child(2){
+  position: relative;
+  top: .7rem;
+
+  @include media(">=400px") {
+    top: .85rem;
+  }
+  @include media(">=500px") {
+    top: 1rem;
+  }
+  @include media(">=768px") {
+    top: 1.5rem;
+  }
+  @include media(">=1000px") {
+    top: 2rem;
+  }
+}
+
+#circle {
+  width: 65vw;
+  height: 65vw;
+  max-height: 24rem;
+  max-width: 24rem;
+
+  @media (max-height: 350px){
+    width: 65vh !important;
+    height: 65vh !important;
+  }
+
+  background: $red;
+  border-radius: 50%;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  #hero {
+    position: relative;
+  }
+
+  #hero div:nth-child(1) {
+    position: absolute;
+    top: calc(50% + -0.7rem); /* rough percentage */
+    transform: translateY(-50%);
+  }
+
+  #hero div:nth-child(2) {
+    position: absolute;
+    top: calc(50% + 0.7rem); /* rough percentage */
+    transform: translateY(-50%);
+  }
+}
