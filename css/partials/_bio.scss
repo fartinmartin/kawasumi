@@ -5,22 +5,36 @@
   @include media(">=720px") {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+
+    *:nth-child(1) {
+      order: 1;
+    }
+    *:nth-child(2) {
+      order: 2;
+    }
+    *:nth-child(3) {
+      order: 4;
+    }
+    *:nth-child(4) {
+      order: 3;
+    }
   }
 
-  @include media(">=1200px") {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-  }
+  // @include media(">=1200px") {
+  //   grid-template-columns: repeat(4, 1fr);
+  //   grid-template-rows: 1fr;
+  // }
 }
 
-.bio-card, .bio-quote {
+.bio-card,
+.bio-quote {
   width: 100vw;
   min-height: 50vh;
   padding: 4rem 2rem;
 
   @include media(">=720px") {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
   }
 }
 
@@ -46,11 +60,11 @@
 }
 
 #tenacity h3 {
-  margin-left: -.5rem;
+  margin-left: -0.5rem;
 }
 
 #experience h3 {
-  margin-left: -.1rem;
+  margin-left: -0.1rem;
 }
 
 // bio quote
@@ -89,6 +103,10 @@
   @include media(">=1280px") {
     font-size: 2rem;
   }
+
+  @media screen and (max-height: 1100px) {
+    align-self: stretch;
+  }
 }
 
 .bio-quote-image {
@@ -96,8 +114,13 @@
   grid-row: 1 / 1;
 }
 
-.open-quote, .close-quote { position: relative; }
-.close-quote { margin-right: -1.8rem; }
+.open-quote,
+.close-quote {
+  position: relative;
+}
+.close-quote {
+  margin-right: -1.8rem;
+}
 
 .bio-quote-yellow {
   background: $yellow;
@@ -109,7 +132,9 @@
   color: $yellow;
 }
 
-.stroked-yellow, .stroked-blue, .stroked-red {
+.stroked-yellow,
+.stroked-blue,
+.stroked-red {
   color: transparent;
   z-index: 10;
 }
